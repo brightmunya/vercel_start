@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 app.use(express.json())
 
 app.get("/", (_req, res) => {
-  res.send("Welcome to My Vercel project v1.0.0.1!")
+  res.send("Welcome to My Vercel project v1.0.0.3!")
 })
 
 app.use("/api/catalog", catalogRouter) // Add catalog routes
