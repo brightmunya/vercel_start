@@ -1,6 +1,6 @@
 import express from "express"
 import createError from "http-errors"
-import catalogRouter from "./routes/catalog.js" // Import routes for "catalog" area of site
+import catalogRouter from "./src/routes/catalog.js" // Import routes for "catalog" area of site
 
 const app = express()
 
@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 app.use(express.json())
 
 app.get("/", (_req, res) => {
-  res.send("Welcome to My Vercel project v1.0.0.3!")
+  res.send("Welcome to My Vercel project v1.0.0.4!")
 })
 
 app.use("/api/catalog", catalogRouter) // Add catalog routes

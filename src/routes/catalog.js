@@ -1,5 +1,6 @@
 import express from "express"
 import { createClient } from "@supabase/supabase-js"
+//import { getShoes } from "../controllers/catalogController.js"
 const router = express.Router()
 
 const supabase = createClient(
